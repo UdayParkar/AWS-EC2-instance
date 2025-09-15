@@ -53,5 +53,5 @@ app.post('/upload', (req, res) => {
   });
 });
 
-// Start the server
-app.listen(port, () => console.log(`Server started on port ${port}`));
+// Start the server and listen on all interfaces
+app.listen(port, '0.0.0.0', () => console.log(`Server started on port ${port}`));
